@@ -63,6 +63,7 @@ def start_qgis(tag='latest'):
         environment=['DISPLAY={}'.format(os.environ['DISPLAY'])],
         command='qgis',
         detach=False,
+        auto_remove=True,
     )
 
 
