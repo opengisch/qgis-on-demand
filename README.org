@@ -1,0 +1,29 @@
+* QGIS-ON-DEMAND
+  This project is a utility to launch different versions of QGIS
+  desktop using the official docker images.
+
+  It works on Linux, probably not on other systems and comes
+  absolutely without warranty.
+** Requirements
+   `Pipenv`, to manage python requirements
+   #+begin_src sh
+     pip install pipenv
+   #+end_src
+** Usage
+*** List qgis tags
+    List the tags available on docker hub for QGIS/QGIS
+    #+begin_src sh
+      pipenv run python qgis-on-demand.py list-tags
+    #+end_src
+*** Launch a specific tag
+    If the image is not present locally, it will be downloaded from
+    docker hub.
+    #+begin_src sh
+      pipenv run python qgis-on-demand.py start-qgis release-3_10
+    #+end_src
+*** Launch the latest image
+    If the image is not present locally, it will be downloaded from
+    docker hub.
+    #+begin_src sh
+      pipenv run python qgis-on-demand.py start-qgis
+    #+end_src
