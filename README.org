@@ -27,3 +27,9 @@
     #+begin_src sh
       pipenv run python qgis-on-demand.py start-qgis
     #+end_src
+** Volumes
+   The ~./plugins~ directory is mounted directly in the qgis plugins
+   directory. 
+
+   The directory ~./io~ is mounted in ~/io~ and is used to tranfer the
+   qgis projects into the container.
