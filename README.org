@@ -5,7 +5,7 @@
   It works on Linux, probably not on other systems and comes
   absolutely without warranty.
 ** Requirements
-   `Pipenv`, to manage python requirements
+   ~Pipenv~, to manage python requirements
    #+begin_src sh
      pip install pipenv
    #+end_src
